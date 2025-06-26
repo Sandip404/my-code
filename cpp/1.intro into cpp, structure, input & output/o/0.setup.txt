@@ -1,0 +1,111 @@
+
+# 🚀 C++ Development Setup Guide
+
+This guide helps you set up a C++ programming environment on **Windows**, **Linux**, and **Android**.
+
+---
+
+## 🪟 Windows
+
+### 🛠 Step-by-Step:
+
+1. **Install a C++ Compiler**:
+   - Option 1: [MinGW-w64](https://www.mingw-w64.org/)
+   - Option 2: [MSYS2](https://www.msys2.org/)
+   - Option 3: Install Visual Studio with C++ workload
+
+2. **Set Up PATH (if needed)**:
+   - For MinGW/MSYS2: Add the `bin` folder (e.g. `C:\mingw-w64\bin`) to your system PATH.
+
+3. **Choose an Editor**:
+   - Recommended: [VS Code](https://code.visualstudio.com/)
+   - Others: Code::Blocks, Dev-C++, Notepad++
+
+4. **Write Code** (e.g., `main.cpp`)
+
+5. **Compile**:
+   ```bash
+   g++ main.cpp -o main.exe
+   ```
+
+6. **Run**:
+   ```bash
+   ./main.exe
+   ```
+
+---
+
+## 🐧 Linux (Debian/Ubuntu-based)
+
+### 🛠 Step-by-Step:
+
+1. **Install Build Tools**:
+   ```bash
+   sudo apt update
+   sudo apt install build-essential
+   ```
+
+2. **Choose an Editor**:
+   - GUI: VS Code, Geany, Sublime Text
+   - CLI: Vim, Nano, Emacs
+
+3. **Write Code** (e.g., `main.cpp`)
+
+4. **Compile**:
+   ```bash
+   g++ main.cpp -o main
+   ```
+
+5. **Run**:
+   ```bash
+   ./main
+   ```
+
+---
+
+## 📱 Android (via Termux)
+
+### 🛠 Step-by-Step:
+
+1. **Install Termux**:
+   - Download from [GitHub Releases](https://github.com/termux/termux-app/releases) *(do NOT use Play Store)*
+
+2. **Install Compiler**:
+   ```bash
+   pkg update
+   pkg install clang
+   ```
+
+3. **Install Text Editor (optional)**:
+   ```bash
+   pkg install nano
+   pkg install vim
+   ```
+
+4. **Write Code**:
+   - Using `nano`, `vim`, or create in an external editor and move to Termux.
+
+5. **Compile**:
+   ```bash
+   clang++ main.cpp -o main
+   ```
+
+6. **Run**:
+   ```bash
+   ./main
+   ```
+
+---
+
+## ✅ Tips
+
+- Save your files with `.cpp` extension.
+- Use [Replit](https://replit.com/) or [Compiler Explorer](https://godbolt.org/) for quick online testing.
+- Use `-Wall -Wextra` flags with `g++` for better warning messages:
+  ```bash
+  g++ -Wall -Wextra main.cpp -o main
+  ```
+
+---
+
+Happy coding! 💻✨
