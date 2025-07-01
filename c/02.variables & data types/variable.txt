@@ -1,1 +1,55 @@
- 
+Variables in C
+=============
+
+Definition:
+-----------
+A variable in C is a named memory location used to store data that can be modified during program execution.
+
+Types of Variables:
+-------------------
+1. Local Variables
+   - Declared inside a function or block.
+   - Accessible only within that function/block.
+   - Not initialized automatically (contains garbage value if not initialized).
+
+2. Global Variables
+   - Declared outside all functions.
+   - Accessible from any function within the file.
+   - Initialized to zero by default.
+
+3. Static Variables
+   - Declared with 'static' keyword.
+   - Retain their value between function calls.
+   - Default initialized to zero.
+
+4. Extern Variables
+   - Declared with 'extern' keyword.
+   - Used to declare a variable defined in another file or scope.
+
+5. Register Variables
+   - Declared with 'register' keyword.
+   - Suggests storing variable in CPU register for faster access (not guaranteed).
+
+Crucial Points:
+---------------
+- Variable names must start with a letter or underscore, followed by letters, digits, or underscores.
+- Cannot use reserved keywords as variable names.
+- Variables must be declared before use.
+- Scope and lifetime depend on where and how the variable is declared.
+- Uninitialized local variables have undefined values.
+
+Example Declaration:
+--------------------
+int age = 25; // integer variable
+float salary = 50000.50; // floating-point variable
+char grade = 'A'; // character variable
+
+Functions of Variables:
+----------------------
+- Store data for computation.
+- Facilitate data manipulation and processing.
+- Enable code reusability and modularity.
+
+Bit Usage & Range:
+------------------
+- Bit usage and range depend on the data type (see datatypes.txt for details). 
