@@ -1,0 +1,44 @@
+C Data Types
+============
+
+Data types specify the type of data a variable can hold. They determine the size, range, and operations that can be performed on the data.
+
+1. Basic (Primitive) Data Types
+-------------------------------
+- int: Integer numbers
+  - Size: Usually 2 or 4 bytes (16 or 32 bits, depends on system)
+  - Range: -32,768 to 32,767 (16-bit), -2,147,483,648 to 2,147,483,647 (32-bit)
+- float: Single-precision floating-point
+  - Size: 4 bytes (32 bits)
+  - Range: ~1.2E-38 to 3.4E+38 (6-7 decimal digits)
+- double: Double-precision floating-point
+  - Size: 8 bytes (64 bits)
+  - Range: ~2.3E-308 to 1.7E+308 (15 decimal digits)
+- char: Single character
+  - Size: 1 byte (8 bits)
+  - Range: -128 to 127 (signed), 0 to 255 (unsigned)
+
+2. Derived Data Types
+---------------------
+- Array
+- Pointer
+- Structure (struct)
+- Union
+- Enumeration (enum)
+
+Type Modifiers:
+---------------
+- signed, unsigned, short, long
+  - Example: unsigned int, long double
+
+Crucial Points:
+---------------
+- The size of data types may vary depending on the compiler and architecture.
+- Use sizeof(type) to determine the size on your system.
+- Choosing the right data type is important for memory efficiency and correctness.
+
+Functions of Data Types:
+------------------------
+- Define the nature of data stored.
+- Determine the operations allowed on the data.
+- Help the compiler allocate appropriate memory. 
